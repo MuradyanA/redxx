@@ -13,7 +13,14 @@ export const { selectAll, selectById } = productsAdapter.getSelectors((state) =>
 });
 
 export const getProductsIds = createSelector(
-  selectAll,
+  // (state) => state.products.entities, 2 nel miasin uncomment aneluc normal ashxatuma
+  // selectAll,
+
+  // selectAll, Menak es meky chi asxatum
+
+  // (state) => state.products.entities, Es meky menak normal ashxatuma
+
+
   (products) => Object.keys(products)
 );
 
